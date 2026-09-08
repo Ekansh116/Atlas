@@ -33,7 +33,5 @@ venv.bak/
 .DS_Store
 Thumbs.db
 
-# Project outputs & images
+# Project outputs (generated diagnostic runs)
 outputs/*
-images/*
-docs/images/*
