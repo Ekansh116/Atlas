@@ -309,8 +309,13 @@ print(
 )
 
 print(
-    "Ratio-test matches:",
+    "Forward ratio matches:",
     len(forward_good)
+)
+
+print(
+    "Backward ratio matches:",
+    len(backward_good)
 )
 
 print(
@@ -375,20 +380,21 @@ if len(inlier_errors) > 0:
     print("================ GEOMETRIC ACCURACY ================")
 
     print(
-        f"Mean reprojection error:   {mean_error:.2f} pixels"
+        f"Mean reprojection error:   {mean_error:.2f} pixels ({mean_error:.2e} px)"
     )
 
     print(
-        f"Median reprojection error: {median_error:.2f} pixels"
+        f"Median reprojection error: {median_error:.2f} pixels ({median_error:.2e} px)"
     )
 
     print(
-        f"Maximum reprojection error: {max_error:.2f} pixels"
+        f"Maximum reprojection error: {max_error:.2f} pixels ({max_error:.2e} px)"
     )
 
     print(
-        f"RMSE:                       {rmse:.2f} pixels"
+        f"RMSE:                       {rmse:.2f} pixels ({rmse:.2e} px)"
     )
+
 
 
 # ============================================================

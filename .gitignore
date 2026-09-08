@@ -1,4 +1,4 @@
-# Python
+﻿# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -33,6 +33,7 @@ venv.bak/
 .DS_Store
 Thumbs.db
 
-# Project outputs (generated diagnostic runs)
-# outputs/*.jpg
-# outputs/*.txt
+# Project outputs & images
+outputs/*
+images/*
+docs/images/*
